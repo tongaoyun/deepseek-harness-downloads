@@ -1,18 +1,20 @@
 # DeepSeek Harness Downloads
 
-Windows 与 macOS 安装包下载，无需 GitHub 登录。此仓库仅用于分发安装包和校验清单。
+Windows 与 macOS 安装包下载，无需 GitHub 登录。此仓库仅分发安装包和校验清单。
 
 ## 下载 / Downloads
 
-验收版 / Test build: `0.2.1-alpha.2.20261012.4.1`
+[下载页面 / Download Releases](https://github.com/tongaoyun/deepseek-harness-downloads/releases)
 
-| 平台 / Platform | 下载 / Download |
+选择页面顶部的最新开发版本，在该版本的 Assets 中按平台下载安装包。每个版本同时提供 `build-manifest.json` 和 `SHA256SUMS.txt`。
+
+Choose the newest development release at the top of the page and download the installer for your platform from its Assets. Each release includes `build-manifest.json` and `SHA256SUMS.txt`.
+
+| 平台 / Platform | 安装包文件名结尾 / Installer Filename Suffix |
 | --- | --- |
-| Windows x64 | [EXE](https://github.com/tongaoyun/deepseek-harness-downloads/releases/download/v0.2.1-alpha.2.20261012.4.1/deepseek-harness-0.2.1-alpha.2.20261012.4.1-win-x64-unsigned.exe) |
-| Mac Apple Silicon | [DMG](https://github.com/tongaoyun/deepseek-harness-downloads/releases/download/v0.2.1-alpha.2.20261012.4.1/deepseek-harness-0.2.1-alpha.2.20261012.4.1-mac-arm64-unsigned.dmg) |
-| Mac Intel | [DMG](https://github.com/tongaoyun/deepseek-harness-downloads/releases/download/v0.2.1-alpha.2.20261012.4.1/deepseek-harness-0.2.1-alpha.2.20261012.4.1-mac-x64-unsigned.dmg) |
-
-[版本与全部文件 / Releases](https://github.com/tongaoyun/deepseek-harness-downloads/releases) · [SHA-256 校验 / Checksums](https://github.com/tongaoyun/deepseek-harness-downloads/releases/download/v0.2.1-alpha.2.20261012.4.1/SHA256SUMS.txt)
+| Windows x64 | `-win-x64-unsigned.exe` |
+| Mac Apple Silicon | `-mac-arm64-unsigned.dmg` |
+| Mac Intel | `-mac-x64-unsigned.dmg` |
 
 ## 安装 / Installation
 
@@ -20,9 +22,9 @@ Windows 下载后打开 EXE 安装；Mac 下载后打开 DMG，将应用拖入 A
 
 On Windows, open the EXE installer. On macOS, open the DMG and drag the app to Applications. Check About This Mac to identify your chip.
 
-此版本用于开发验收，未签名、未进行 macOS 公证。系统可能显示来源确认或阻止打开；确认来源后使用系统提供的安全设置进行处理。安装包的公开下载不替代应用内的员工登录。
+开发验收版未签名、未进行 macOS 公证。系统可能显示来源确认或阻止打开；确认来源后使用系统提供的安全设置进行处理。安装包的公开下载不替代应用内的员工登录。
 
-This is an unsigned test build without macOS notarization. The operating system may request confirmation or block opening it; use the operating system's security settings after verifying the source. Public installer downloads do not replace employee sign-in inside the application.
+Development builds are unsigned and lack macOS notarization. The operating system may request confirmation or block opening them; use the operating system's security settings after verifying the source. Public installer downloads do not replace employee sign-in inside the application.
 
 Release 文件不会随原构建的 Actions 产物十四天到期而删除。
 
